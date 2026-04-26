@@ -1,0 +1,290 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - RoboTech</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">RoboTech</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/products" class="nav-link">Products</a></li>
+                <li><a href="/services" class="nav-link">Services</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cart-btn">🛒 Cart</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Our Products</h1>
+            <p>Explore our cutting-edge technology solutions</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="category-filters">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="devices">Smart Devices</button>
+            <button class="filter-btn" data-filter="gaming">Gaming</button>
+            <button class="filter-btn" data-filter="audio">Audio</button>
+            <button class="filter-btn" data-filter="wearables">Wearables</button>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-showcase">
+        <div class="products-container">
+            <!-- Product 1 -->
+            <div class="product-item" data-category="devices">
+                <div class="product-header">
+                    <span class="product-badge">NEW</span>
+                </div>
+                <div class="product-visual">
+                    <span class="product-icon">📱</span>
+                </div>
+                <h3>SmartPhone Pro X</h3>
+                <p class="product-description">Next-gen smartphone with AI capabilities</p>
+                <div class="product-specs">
+                    <span>• 6.8" Display</span>
+                    <span>• 5G Ready</span>
+                    <span>• 1TB Storage</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">$999.99</span>
+                    <button class="product-action-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item" data-category="gaming">
+                <div class="product-header">
+                    <span class="product-badge popular">POPULAR</span>
+                </div>
+                <div class="product-visual">
+                    <span class="product-icon">🎮</span>
+                </div>
+                <h3>Gaming Console Z</h3>
+                <p class="product-description">Ultimate gaming experience in 4K</p>
+                <div class="product-specs">
+                    <span>• 4K @ 144Hz</span>
+                    <span>• 2TB SSD</span>
+                    <span>• Ray Tracing</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">$599.99</span>
+                    <button class="product-action-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item" data-category="audio">
+                <div class="product-header">
+                    <span class="product-badge sale">SALE</span>
+                </div>
+                <div class="product-visual">
+                    <span class="product-icon">🎧</span>
+                </div>
+                <h3>HyperSound Pro</h3>
+                <p class="product-description">Premium noise-canceling headphones</p>
+                <div class="product-specs">
+                    <span>• ANC Technology</span>
+                    <span>• 60hr Battery</span>
+                    <span>• Spatial Audio</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">
+                        <span class="original-price">$349.99</span>
+                        $249.99
+                    </span>
+                    <button class="product-action-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item" data-category="wearables">
+                <div class="product-header">
+                    <span class="product-badge">TRENDING</span>
+                </div>
+                <div class="product-visual">
+                    <span class="product-icon">⌚</span>
+                </div>
+                <h3>SmartWatch Elite</h3>
+                <p class="product-description">Advanced health and fitness tracking</p>
+                <div class="product-specs">
+                    <span>• Heart Monitor</span>
+                    <span>• GPS</span>
+                    <span>• 7-day Battery</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">$299.99</span>
+                    <button class="product-action-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-item" data-category="devices">
+                <div class="product-header">
+                    <span class="product-badge">PRE-ORDER</span>
+                </div>
+                <div class="product-visual">
+                    <span class="product-icon">💻</span>
+                </div>
+                <h3>UltraBook Air</h3>
+                <p class="product-description">Lightweight powerhouse for creators</p>
+                <div class="product-specs">
+                    <span>• 1.2kg Weight</span>
+                    <span>• 16hr Battery</span>
+                    <span>• M3 Processor</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">$1,299.99</span>
+                    <button class="product-action-btn">Pre-Order Now</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-item" data-category="audio">
+                <div class="product-header">
+                    <span class="product-badge popular">POPULAR</span>
+                </div>
+                <div class="product-visual">
+                    <span class="product-icon">🔊</span>
+                </div>
+                <h3>SoundWave Speaker</h3>
+                <p class="product-description">360-degree surround sound system</p>
+                <div class="product-specs">
+                    <span>• 360° Sound</span>
+                    <span>• Waterproof</span>
+                    <span>• 20hr Battery</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">$199.99</span>
+                    <button class="product-action-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-item" data-category="gaming">
+                <div class="product-header">
+                    <span class="product-badge">NEW</span>
+                </div>
+                <div class="product-visual">
+                    <span class="product-icon">🕹️</span>
+                </div>
+                <h3>GamePad Ultra</h3>
+                <p class="product-description">Professional gaming controller</p>
+                <div class="product-specs">
+                    <span>• Haptic Feedback</span>
+                    <span>• 48hr Battery</span>
+                    <span>• Customizable</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">$149.99</span>
+                    <button class="product-action-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-item" data-category="wearables">
+                <div class="product-header">
+                    <span class="product-badge sale">SALE</span>
+                </div>
+                <div class="product-visual">
+                    <span class="product-icon">👓</span>
+                </div>
+                <h3>AR Glasses Pro</h3>
+                <p class="product-description">Augmented reality viewing device</p>
+                <div class="product-specs">
+                    <span>• 1080p Display</span>
+                    <span>• AR Ready</span>
+                    <span>• 8hr Battery</span>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">
+                        <span class="original-price">$799.99</span>
+                        $599.99
+                    </span>
+                    <button class="product-action-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination-section">
+        <div class="pagination">
+            <button class="page-btn prev-btn">← Previous</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn next-btn">Next →</button>
+        </div>
+    </section>
+
+    <!-- Featured Product -->
+    <section class="featured-product-section">
+        <h2 class="section-title">Featured Product</h2>
+        <div class="featured-product">
+            <div class="featured-left">
+                <span class="featured-icon">🚀</span>
+            </div>
+            <div class="featured-right">
+                <h3>Next Gen AI Assistant Device</h3>
+                <p>Revolutionary AI-powered personal assistant that learns your preferences and adapts to your lifestyle.</p>
+                <ul class="featured-specs">
+                    <li>✓ Natural language processing</li>
+                    <li>✓ 24/7 availability</li>
+                    <li>✓ Smart home integration</li>
+                    <li>✓ Privacy-first design</li>
+                </ul>
+                <div class="featured-footer">
+                    <span class="featured-price">$449.99</span>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Leading the future of e-commerce with innovative technology</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@robotech.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RoboTech. All rights reserved. <span class="pulse">●</span></p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/products.js' %}"></script>
+</body>
+</html>

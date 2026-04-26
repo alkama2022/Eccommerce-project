@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - RoboTech</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">RoboTech</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/products" class="nav-link">Products</a></li>
+                <li><a href="/services" class="nav-link">Services</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cart-btn">🛒 Cart</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Our Services</h1>
+            <p>Premium support and solutions for all your tech needs</p>
+        </div>
+    </section>
+
+    <!-- Main Services Grid -->
+    <section class="services-main">
+        <h2 class="section-title">Core Services</h2>
+        <div class="services-grid-main">
+            <!-- Service 1 -->
+            <div class="service-card-main">
+                <div class="service-icon-main">🛠️</div>
+                <h3>Technical Support</h3>
+                <p>24/7 professional support for all your devices and systems. Expert technicians ready to help.</p>
+                <ul class="service-features">
+                    <li>• 24/7 Availability</li>
+                    <li>• Expert Technicians</li>
+                    <li>• Remote Assistance</li>
+                    <li>• Priority Response</li>
+                </ul>
+                <button class="service-btn">Learn More</button>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card-main">
+                <div class="service-icon-main">📦</div>
+                <h3>Installation Service</h3>
+                <p>Professional installation of all products with expert configuration and optimization.</p>
+                <ul class="service-features">
+                    <li>• Professional Setup</li>
+                    <li>• System Configuration</li>
+                    <li>• Performance Tuning</li>
+                    <li>• Training Included</li>
+                </ul>
+                <button class="service-btn">Learn More</button>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card-main">
+                <div class="service-icon-main">🔄</div>
+                <h3>Maintenance Plans</h3>
+                <p>Comprehensive maintenance packages to keep your devices running at peak performance.</p>
+                <ul class="service-features">
+                    <li>• Regular Checkups</li>
+                    <li>• Software Updates</li>
+                    <li>• Preventive Care</li>
+                    <li>• Extended Warranty</li>
+                </ul>
+                <button class="service-btn">Learn More</button>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card-main">
+                <div class="service-icon-main">💡</div>
+                <h3>Consulting</h3>
+                <p>Expert consultation to help you choose the right tech solutions for your needs.</p>
+                <ul class="service-features">
+                    <li>• Needs Assessment</li>
+                    <li>• Tech Recommendations</li>
+                    <li>• Custom Solutions</li>
+                    <li>• ROI Planning</li>
+                </ul>
+                <button class="service-btn">Learn More</button>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card-main">
+                <div class="service-icon-main">🔐</div>
+                <h3>Security Solutions</h3>
+                <p>Advanced security systems to protect your devices and data from cyber threats.</p>
+                <ul class="service-features">
+                    <li>• Threat Detection</li>
+                    <li>• Data Encryption</li>
+                    <li>• Regular Audits</li>
+                    <li>• Incident Response</li>
+                </ul>
+                <button class="service-btn">Learn More</button>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card-main">
+                <div class="service-icon-main">📚</div>
+                <h3>Training Programs</h3>
+                <p>Comprehensive training programs to help you master your technology investments.</p>
+                <ul class="service-features">
+                    <li>• Online Courses</li>
+                    <li>• Hands-on Workshops</li>
+                    <li>• Certification Programs</li>
+                    <li>• One-on-one Coaching</li>
+                </ul>
+                <button class="service-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Tiers Section -->
+    <section class="pricing-section">
+        <h2 class="section-title">Service Plans</h2>
+        <div class="pricing-grid">
+            <!-- Starter Plan -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Starter</h3>
+                    <p class="pricing-subtitle">For individuals</p>
+                </div>
+                <div class="pricing-amount">
+                    <span class="currency">$</span>
+                    <span class="amount">29</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ Email Support</li>
+                    <li>✓ Basic Troubleshooting</li>
+                    <li>✓ Monthly Updates</li>
+                    <li>✗ Priority Support</li>
+                    <li>✗ Consulting Hours</li>
+                </ul>
+                <button class="pricing-btn">Get Started</button>
+            </div>
+
+            <!-- Professional Plan -->
+            <div class="pricing-card featured">
+                <div class="pricing-badge">POPULAR</div>
+                <div class="pricing-header">
+                    <h3>Professional</h3>
+                    <p class="pricing-subtitle">For businesses</p>
+                </div>
+                <div class="pricing-amount">
+                    <span class="currency">$</span>
+                    <span class="amount">99</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ Phone & Email Support</li>
+                    <li>✓ Advanced Troubleshooting</li>
+                    <li>✓ Weekly Updates</li>
+                    <li>✓ Priority Support</li>
+                    <li>✓ 10 Consulting Hours</li>
+                </ul>
+                <button class="pricing-btn primary">Choose Plan</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <p class="pricing-subtitle">For organizations</p>
+                </div>
+                <div class="pricing-amount">
+                    <span class="currency">$</span>
+                    <span class="amount">299</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ 24/7 Phone Support</li>
+                    <li>✓ Dedicated Account Manager</li>
+                    <li>✓ Daily Updates</li>
+                    <li>✓ VIP Support</li>
+                    <li>✓ Unlimited Consulting</li>
+                </ul>
+                <button class="pricing-btn">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Benefits -->
+    <section class="service-benefits">
+        <h2 class="section-title">Why Choose Our Services</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-icon">⭐</div>
+                <h4>Expert Team</h4>
+                <p>Certified professionals with years of experience in technology solutions</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">⚡</div>
+                <h4>Fast Response</h4>
+                <p>Quick turnaround time for all service requests and support tickets</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🎯</div>
+                <h4>Custom Solutions</h4>
+                <p>Tailored services designed specifically for your unique needs</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">💰</div>
+                <h4>Competitive Pricing</h4>
+                <p>Best value for money with flexible payment options available</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🏆</div>
+                <h4>Industry Leading</h4>
+                <p>Trusted by thousands of satisfied customers worldwide</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🔄</div>
+                <h4>Continuous Support</h4>
+                <p>Ongoing assistance and updates to ensure your success</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"RoboTech's services transformed our business. Highly professional and reliable!"</p>
+                <div class="testimonial-author">
+                    <span class="author-name">John Smith</span>
+                    <span class="author-title">CEO, Tech Innovations Inc</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Best support team I've worked with. They solved our issues in no time."</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Sarah Johnson</span>
+                    <span class="author-title">Manager, Digital Solutions</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Excellent value for money. The training programs are top-notch!"</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Mike Chen</span>
+                    <span class="author-title">Director, Future Tech Labs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Get Started?</h2>
+            <p>Choose a service plan that works for you today</p>
+            <button class="btn btn-cta">Browse Services</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Leading the future of e-commerce with innovative technology</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@robotech.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RoboTech. All rights reserved. <span class="pulse">●</span></p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

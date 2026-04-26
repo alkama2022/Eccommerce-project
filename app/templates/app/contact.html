@@ -1,0 +1,283 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RoboTech</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">RoboTech</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/products" class="nav-link">Products</a></li>
+                <li><a href="/services" class="nav-link">Services</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cart-btn">🛒 Cart</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team for any inquiries</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="contact-container">
+            <div class="contact-info-grid">
+                <!-- Address -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Address</h3>
+                    <p>123 Tech Avenue</p>
+                    <p>Silicon Valley, CA 94025</p>
+                    <p>United States</p>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>Main: +1 (555) 123-4567</p>
+                    <p>Support: +1 (555) 123-4568</p>
+                    <p>Sales: +1 (555) 123-4569</p>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>General: info@robotech.com</p>
+                    <p>Support: support@robotech.com</p>
+                    <p>Sales: sales@robotech.com</p>
+                </div>
+
+                <!-- Hours -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9 AM - 6 PM</p>
+                    <p>Saturday: 10 AM - 4 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+
+                <!-- Live Chat -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>Live Chat</h3>
+                    <p>Available 24/7 for instant support</p>
+                    <button class="contact-action-btn">Start Chat</button>
+                </div>
+
+                <!-- Social Media -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h2 class="section-title">Send us a Message</h2>
+                <p>We'd love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-grid">
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+                    </div>
+
+                    <!-- Category -->
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option value="">Select Category</option>
+                            <option value="sales">Sales Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Priority -->
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select id="priority" name="priority">
+                            <option value="normal">Normal</option>
+                            <option value="high">High</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group full-width">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Subscribe to our newsletter for updates and offers</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>What is your return policy?</h4>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer a 30-day money-back guarantee on all products. If you're not satisfied with your purchase, simply contact our support team for a full refund or exchange.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>How long does shipping take?</h4>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Standard shipping typically takes 5-7 business days. We also offer express shipping (2-3 days) and overnight shipping options for an additional fee.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>Do you offer warranty on products?</h4>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, all our products come with a 1-year manufacturer's warranty covering defects and malfunctions. Extended warranty options are also available for purchase.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>What payment methods do you accept?</h4>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, Google Pay, and bank transfers for corporate orders.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>Is my personal data secure?</h4>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we use industry-leading encryption and security protocols to protect your data. We comply with GDPR and other international privacy regulations.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>Do you offer bulk discounts?</h4>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! For bulk orders (10+ items), we offer special discounts. Please contact our sales team at sales@robotech.com for a customized quote.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <h2 class="section-title">Find Us</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3750638856566!2d-122.03971!3d37.36883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7d0e7b4b4b5%3A0x1!2sRoboTech%20Headquarters!5e0!3m2!1sen!2sus!4v1" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Leading the future of e-commerce with innovative technology</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@robotech.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RoboTech. All rights reserved. <span class="pulse">●</span></p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/contact.js' %}"></script>
+</body>
+</html>
